@@ -287,3 +287,64 @@
     background: var(--dark);
     border-color: var(--primary);
 }
+
+#timer {
+    color: #f00;
+    font-size: 40px;
+    margin: 5px auto;
+    border: 5px red;
+    border-radius: 30%;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    position:relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    
+  }
+
+  #time {
+    margin-top: 7%;
+    margin-left: 7%;
+    z-index: 1;
+    position: relative;
+  }
+
+  #filler {
+    background: #0c0;
+    height: 0px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  #buttons button {
+    background: #0c0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0;
+    width: 80px;
+    margin: 5px;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 25px;
+
+
+  }
+
+  #buttons button#shortBreak {
+    background: rgb(0, 95, 204);
+  }
+
+  #buttons button#longBreak {
+    background: #080;
+  }
+
+  #buttons button#stop {
+    background: #f00;
+  }
+
