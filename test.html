@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="utf-8">
+    <title>FORÇA E HONRA</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+       
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-secondary  px-4 py-0">
+            <div class=" dropdown navbar-nav ">
+                <div class=" dropdown navbar-nav ms-auto">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                            class="fa fa-laptop me-2"></i>Matérias</a>
+                    <div class="dropdown-menu bg-secondary border-0">
+                        <li class="nav-item"> <a class="nav-link" href="materiaDireito.html"> Direito Constitucional
+                            </a>
+                        <li class="nav-item"> <a class="nav-link" href="materiaRaciocinio.html"> Raciocínio Lógico </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="materiaMatematica.html"> Matemática </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="materiaPortugues.html"> Português </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="materiaLiteratura.html"> Literatura </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="materiaIngles.html"> Inglês </a></li>
+                    </div>
+                </div>
+
+                <div class=" dropdown navbar-nav ms-auto">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                            class="far fa-file-alt me-2"></i>Questões</a>
+                    <div class="dropdown-menu bg-secondary border-0">
+                        <li class="nav-item"> <a class="nav-link"
+                                href="https://www.qconcursos.com/questoes-de-concursos/questoes?discipline_ids%5B%5D=3&subject_ids%5B%5D=49&subject_ids%5B%5D=436&subject_ids%5B%5D=437&subject_ids%5B%5D=438&subject_ids%5B%5D=806&subject_ids%5B%5D=868&subject_ids%5B%5D=1979&subject_ids%5B%5D=1985&subject_ids%5B%5D=1986&subject_ids%5B%5D=16249&subject_ids%5B%5D=16262&subject_ids%5B%5D=16263&subject_ids%5B%5D=16320&subject_ids%5B%5D=16321"
+                                target="_blank">
+                                Direito Constitucional </a></li>
+                        <li class="nav-item"> <a class="nav-link"
+                                href="https://www.qconcursos.com/questoes-de-concursos/questoes?stored_filter_id=14914872&my_questions=all&discipline_ids%5B%5D=4&subject_ids%5B%5D=15441&subject_ids%5B%5D=15442&subject_ids%5B%5D=15443&subject_ids%5B%5D=15446&subject_ids%5B%5D=15450&subject_ids%5B%5D=15457&subject_ids%5B%5D=15461&subject_ids%5B%5D=15463&subject_ids%5B%5D=16021&subject_ids%5B%5D=17777&subject_ids%5B%5D=17778&subject_ids%5B%5D=28016"
+                                target="_blank">
+                                Raciocínio Lógico </a></li>
+                        <li class="nav-item"> <a class="nav-link"
+                                href="https://www.qconcursos.com/questoes-de-concursos/questoes?discipline_ids%5B%5D=13&my_questions=all&subject_ids%5B%5D=14553&subject_ids%5B%5D=14556&subject_ids%5B%5D=14568&subject_ids%5B%5D=14570&subject_ids%5B%5D=14582&subject_ids%5B%5D=20313&subject_ids%5B%5D=20317&subject_ids%5B%5D=20318&subject_ids%5B%5D=20319&subject_ids%5B%5D=20320&subject_ids%5B%5D=20321&subject_ids%5B%5D=21769"
+                                target="_blank">
+                                Matemática </a></li>
+                        <li class="nav-item"> <a class="nav-link"
+                                href="https://www.qconcursos.com/questoes-de-concursos/questoes?stored_filter_id=14849194&my_questions=all&discipline_ids%5B%5D=1&subject_ids%5B%5D=14614&subject_ids%5B%5D=14615&subject_ids%5B%5D=14621&subject_ids%5B%5D=14625&subject_ids%5B%5D=14647&subject_ids%5B%5D=14655&subject_ids%5B%5D=14657&subject_ids%5B%5D=14658&subject_ids%5B%5D=14659&subject_ids%5B%5D=14660&subject_ids%5B%5D=14661&subject_ids%5B%5D=14988&subject_ids%5B%5D=14989&subject_ids%5B%5D=15727&subject_ids%5B%5D=16002&subject_ids%5B%5D=16007&subject_ids%5B%5D=16008&subject_ids%5B%5D=16009&subject_ids%5B%5D=16010&subject_ids%5B%5D=16011&subject_ids%5B%5D=16012&subject_ids%5B%5D=16013&subject_ids%5B%5D=16014&subject_ids%5B%5D=16015&subject_ids%5B%5D=16017&subject_ids%5B%5D=16018&subject_ids%5B%5D=16157&subject_ids%5B%5D=16161&subject_ids%5B%5D=16173&subject_ids%5B%5D=16176&subject_ids%5B%5D=16331&subject_ids%5B%5D=16392&subject_ids%5B%5D=19271&subject_ids%5B%5D=20182"
+                                target="_blank">
+                                Português </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Literatura </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link"
+                                href="https://www.qconcursos.com/questoes-de-concursos/questoes?discipline_ids%5B%5D=16&my_questions=all&subject_ids%5B%5D=13881"
+                                target="_blank">
+                                Inglês </a></li>
+                    </div>
+                </div>
+                <div class="navbar-nav ms-auto">
+                   
+
+                            </a>
+
+                            <!--<hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all message</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-bell me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Notificatin</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Profile updated</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">New user added</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Password changed</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all notifications</a>
+                        </div> -->
+                        </div>
+                        <div class="nav-item dropdown">
+
+                            <div
+                                class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                                <a href="#" class="dropdown-item">My Profile</a>
+                                <a href="#" class="dropdown-item">Settings</a>
+                                <a href="#" class="dropdown-item">Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+            <!-- Navbar End -->
+
+            <!-- Sales Chart Start -->
+
+            <!-- Sales Chart End -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-secondary text-center rounded p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">Cronograma</h6>
+
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table text-start align-middle table-bordered table-hover mb-0">
+                            <thead>
+                                <tr class="text-white">
+
+                                    <th scope="col">SEGUNDA</th>
+                                    <th scope="col">TERÇA</th>
+                                    <th scope="col">QUARTA</th>
+                                    <th scope="col">QUINTA</th>
+                                    <th scope="col">SEXTA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>REVISÃO</td>
+                                    <td>REVISÃO</td>
+                                    <td>REVISÃO</td>
+                                    <td>REVISÃO</td>
+                                    <td>REVISÃO</td>
+                                </tr>
+                                <tr>
+
+                                    <td>PORTUGUÊS</td>
+                                    <td>CONSTITUIÇÃO</td>
+                                    <td>RACIOCÍNIO</td>
+                                    <td>PORTUGUÊS</td>
+                                    <td>PORTUGUÊS</td>
+                                </tr>
+                                <tr>
+
+                                    <td>CONSTITUIÇÃO</td>
+                                    <td>HUMANOS</td>
+                                    <td>EXERCÍCIOS</td>
+                                    <td>INGLÊS</td>
+                                    <td>CONSTITUIÇÃO</td>
+                                </tr>
+                                <tr>
+
+                                    <td>EXERCÍCIOS</td>
+                                    <td>EXERCÍCIOS</td>
+                                    <td>EXERCÍCIOS</td>
+                                    <td>EXERCÍCIOS</td>
+                                    <td>EXERCÍCIOS</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Widgets Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div class="h-100 bg-secondary rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <h6 class="mb-0">Tempo</h6>
+
+                            </div>
+                            <div class="d-flex align-items-center border-bottom py-3 bg-secondary">
+                                <div class="d-flex align-items-center pt-1 bg-secondary ">
+                                    <div id="pomodoro-app" id="pomodoro">
+                                        <div class="col-md-12 col-xs-pull-6 bg-secondary">
+                                            <div class="card bg-secondary">
+                                                <div class="card-body">
+                                                    <div id="container">
+                                                        <div id="timer">
+                                                            <div id="time">
+                                                                <span id="minutes">45</span>
+                                                                <span id="colon">:</span>
+                                                                <span id="seconds">00</span>
+                                                            </div>
+                                                            <div id="filler"></div>
+                                                        </div>
+                                                        <div id="buttons">
+                                                            <button id="work">Inicio</button>
+                                                            <button id="shortBreak">Descanço</button>
+                                                            <button id="stop">Stop</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div class="h-100 bg-secondary rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Calendário</h6>
+                            </div>
+                            <div id="calender"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div class="h-100 bg-secondary rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">To Do List</h6>
+
+                            </div>
+                            <div class="d-flex mb-2">
+                                <input class="form-control bg-dark border-0" type="text" placeholder="Enter task">
+                                <button type="button" class="btn btn-primary ms-2">Add</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Widgets End -->
+
+
+            <!-- Recent Sales Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-secondary text-center rounded p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">Simulados</h6>
+
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table text-start align-middle table-bordered table-hover mb-0">
+                            <thead>
+                                <tr class="text-white">
+                                    <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                                    <th scope="col">DATA</th>
+                                    <th scope="col">ERROS</th>
+                                    <th scope="col">ACERTOS</th>
+                                    <th scope="col">DOWNLOAD</th>
+                                    <th scope="col">RESPOSTAS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>01 Jan 2045</td>
+                                    <td>Jhon Doe</td>
+                                    <td><input class="bg-success border-0" type="number" placeholder=""></td>
+                                    <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
+                                    <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>01 Jan 2045</td>
+                                    <td>Jhon Doe</td>
+                                    <td><input class="bg-success border-0" type="number" placeholder=""></td>
+                                    <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
+                                    <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>01 Jan 2045</td>
+                                    <td>Jhon Doe</td>
+                                    <td><input class="bg-success border-0" type="number" placeholder=""></td>
+                                    <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
+                                    <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>01 Jan 2045</td>
+                                    <td>Jhon Doe</td>
+                                    <td><input class="bg-success border-0" type="number" placeholder=""></td>
+                                    <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
+                                    <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="form-check-input" type="checkbox"></td>
+                                    <td>01 Jan 2045</td>
+                                    <td>Jhon Doe</td>
+                                    <td><input class="bg-success border-0" type="number" placeholder=""></td>
+                                    <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
+                                    <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Recent Sales End -->
+
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-secondary rounded-top p-4">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 text-center text-sm-start">
+                            &copy; <a href="#">Matheus Trindade</a>, All Right Reserved.
+                        </div>
+                        <div class="col-12 col-sm-6 text-center text-sm-end">
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+
+<script>
+    var pomodoro = {
+        started: false,
+        minutes: 0,
+        seconds: 0,
+        fillerHeight: 0,
+        fillerIncrement: 0,
+        interval: null,
+        minutesDom: null,
+        secondsDom: null,
+        fillerDom: null,
+        init: function () {
+            var self = this;
+            this.minutesDom = document.querySelector('#minutes');
+            this.secondsDom = document.querySelector('#seconds');
+            this.fillerDom = document.querySelector('#filler');
+            this.interval = setInterval(function () {
+                self.intervalCallback.apply(self);
+            }, 1000);
+            document.querySelector('#work').onclick = function () {
+                self.startWork.apply(self);
+            };
+            document.querySelector('#shortBreak').onclick = function () {
+                self.startShortBreak.apply(self);
+            };
+            document.querySelector('#stop').onclick = function () {
+                self.stopTimer.apply(self);
+            };
+        },
+        resetVariables: function (mins, secs, started) {
+            this.minutes = mins;
+            this.seconds = secs;
+            this.started = started;
+            this.fillerIncrement = 200 / (this.minutes * 60);
+            this.fillerHeight = 0;
+        },
+        startWork: function () {
+            this.resetVariables(45, 0, true);
+        },
+        startShortBreak: function () {
+            this.resetVariables(5, 0, true);
+        },
+        stopTimer: function () {
+            this.resetVariables(0, 0, false);
+            ;
+        },
+        toDoubleDigit: function (num) {
+            if (num < 10) {
+                return "0" + parseInt(num, 10);
+            }
+            return num;
+        },
+        updateDom: function () {
+            this.minutesDom.innerHTML = this.toDoubleDigit(this.minutes);
+            this.secondsDom.innerHTML = this.toDoubleDigit(this.seconds);
+            this.fillerHeight = this.fillerHeight + this.fillerIncrement;
+            this.fillerDom.style.height = this.fillerHeight + 'px';
+        },
+        intervalCallback: function () {
+            if (!this.started) return false;
+            if (this.seconds == 0) {
+                if (this.minutes == 0) {
+                    this.timerComplete();
+                    return;
+                }
+                this.seconds = 59;
+                this.minutes--;
+            } else {
+                this.seconds--;
+            }
+            this.updateDom();
+        },
+        timerComplete: function () {
+            this.started = false;
+            this.fillerHeight = 0;
+        }
+    };
+    window.onload = function () {
+        pomodoro.init();
+    };</script>
+
+</html>
