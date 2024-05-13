@@ -289,3 +289,21 @@ var pomodoro = {
   window.onload = function () {
     pomodoro.init();
   }
+
+
+
+  // Quando a checkbox é clicada, essa função é executada
+function saveCheckboxState(checkbox) {
+    var checkbox = document.getElementById(checkbox);
+    // Salva o estado da checkbox (se está marcada ou não) no localStorage
+    localStorage.setItem(checkbox, checkbox.checked);
+}
+
+// Quando a página é carregada, essa função é executada
+function loadCheckboxState(checkbox) {
+    var checked = JSON.parse(localStorage.getItem(checkbox));
+    // Se o estado da checkbox foi salvo, atualiza a checkbox para refletir esse estado
+    if (checked !== null) {
+        document.getElementById(checkbox).checked = checked;
+    }
+}
