@@ -307,3 +307,4 @@ function loadCheckboxState(checkbox) {
         document.getElementById(checkbox).checked = checked;
     }
 }
+
