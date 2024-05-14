@@ -389,12 +389,13 @@
             <div class="col-sm-12 col-md-6 col-xl-4">
               <div class="h-100 bg-secondary rounded p-4">
                 <div class="d-flex align-items-center justify-content-between mb-4">
-                  <h6 class="mb-0">To Do List</h6>
+                  <h6 class="mb-0">Lista de Tarefas</h6>
 
                 </div>
-                <div class="d-flex mb-2">
-                  <input class="form-control bg-dark border-0" type="text" placeholder="Enter task">
-                  <button type="button" class="btn btn-primary ms-2">Add</button>
+                <div class="align-items-center justify-content-between mb-4">
+                  <input id="todoInput" class="form-control bg-dark border-0" type="text" placeholder="Nova tarefa">
+                  <button type="button" class="btn btn-primary ms-2" onclick="newTask()">Add</button>
+                  <ul id="todoList"></ul>
                 </div>
 
               </div>
@@ -1480,6 +1481,52 @@
     }
   }
   window.addEventListener('change', save);  
+
+  function getTodos() {
+            let todos = [];
+            let todosStr = localStorage.getItem('todo');
+            if (todosStr !== null) {
+                todos = JSON.parse(todosStr); 
+            }
+            return todos;
+        }
+
+        function newTask() {
+            let task = document.getElementById('todoInput').value;
+            let todos = getTodos();
+            todos.push(task);
+            localStorage.setItem('todo', JSON.stringify(todos));
+
+            showTodos();
+
+            document.getElementById('todoInput').value = '';
+        }
+
+        function removeTask() {
+            let id = this.getAttribute('id');
+            let todos = getTodos();
+            todos.splice(id, 1);
+            localStorage.setItem('todo', JSON.stringify(todos));
+
+            showTodos();
+        }
+
+        function showTodos() {
+            let todos = getTodos();
+
+            let html = '';
+            for(let i=0; i<todos.length; i++) {
+                html += '<li>' + todos[i] + ' <button class="remove" id="' + i  + '">x</button></li>';
+            };
+            document.getElementById('todoList').innerHTML = html;
+
+            let buttons = document.getElementsByClassName('remove');
+            for (let i=0; i < buttons.length; i++) {
+                buttons[i].addEventListener('click', removeTask);
+            };
+        }
+
+        showTodos();
 </script>
 
 </html>
