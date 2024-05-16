@@ -64,19 +64,19 @@
           <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Início</a>
           <div class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
-              class="fa fa-laptop me-2"></i>Matérias</a>
-          <div class="dropdown-menu bg-secondary border-0">
-            <li class="nav-item"> <a class="nav-link" onclick="showDiv2()"> Direito Constitucional
-              </a>
-            <li class="nav-item"> <a class="nav-link" onclick="showDiv3()"> Raciocínio Lógico
-              </a>
-            </li>
-            <li class="nav-item"> <a class="nav-link" onclick="showDiv4()"> Matemática </a>
-            </li>
-            <li class="nav-item"> <a class="nav-link" onclick="showDiv5()"> Português </a></li>
-            <li class="nav-item"> <a class="nav-link" onclick="showDiv6()"> Literatura </a>
-            </li>
-            <li class="nav-item"> <a class="nav-link" onclick="showDiv7()"> Inglês </a></li>
+                class="fa fa-laptop me-2"></i>Matérias</a>
+            <div class="dropdown-menu bg-secondary border-0">
+              <li class="nav-item"> <a class="nav-link" onclick="showDiv2()"> Direito Constitucional
+                </a>
+              <li class="nav-item"> <a class="nav-link" onclick="showDiv3()"> Raciocínio Lógico
+                </a>
+              </li>
+              <li class="nav-item"> <a class="nav-link" onclick="showDiv4()"> Matemática </a>
+              </li>
+              <li class="nav-item"> <a class="nav-link" onclick="showDiv5()"> Português </a></li>
+              <li class="nav-item"> <a class="nav-link" onclick="showDiv6()"> Literatura </a>
+              </li>
+              <li class="nav-item"> <a class="nav-link" onclick="showDiv7()"> Inglês </a></li>
             </div>
           </div>
 
@@ -288,10 +288,9 @@
 
             </div>
             <div class="table-responsive">
-              <table class="table text-start align-middle table-bordered table-hover mb-0">
+              <table id="myTable" class="table align-middle table-bordered table-hover ">
                 <thead>
                   <tr class="text-white">
-
                     <th scope="col">SEGUNDA</th>
                     <th scope="col">TERÇA</th>
                     <th scope="col">QUARTA</th>
@@ -299,41 +298,43 @@
                     <th scope="col">SEXTA</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
+                <div class="table align-middle table-bordered table-hover ">
+                  <tbody>
+                    <tr>
 
-                    <td>REVISÃO</td>
-                    <td>REVISÃO</td>
-                    <td>REVISÃO</td>
-                    <td>REVISÃO</td>
-                    <td>REVISÃO</td>
-                  </tr>
-                  <tr>
+                      <td>REVISÃO</td>
+                      <td>REVISÃO</td>
+                      <td>REVISÃO</td>
+                      <td>REVISÃO</td>
+                      <td>REVISÃO</td>
+                    </tr>
+                    <tr>
 
-                    <td>PORTUGUÊS</td>
-                    <td>CONSTITUIÇÃO</td>
-                    <td>RACIOCÍNIO</td>
-                    <td>PORTUGUÊS</td>
-                    <td>PORTUGUÊS</td>
-                  </tr>
-                  <tr>
+                      <td>PORTUGUÊS</td>
+                      <td>CONSTITUIÇÃO</td>
+                      <td>RACIOCÍNIO</td>
+                      <td>PORTUGUÊS</td>
+                      <td>PORTUGUÊS</td>
+                    </tr>
+                    <tr>
 
-                    <td>CONSTITUIÇÃO</td>
-                    <td>HUMANOS</td>
-                    <td>EXERCÍCIOS</td>
-                    <td>INGLÊS</td>
-                    <td>CONSTITUIÇÃO</td>
-                  </tr>
-                  <tr>
+                      <td>CONSTITUIÇÃO</td>
+                      <td>HUMANOS</td>
+                      <td>EXERCÍCIOS</td>
+                      <td>INGLÊS</td>
+                      <td>CONSTITUIÇÃO</td>
+                    </tr>
+                    <tr>
 
-                    <td>EXERCÍCIOS</td>
-                    <td>EXERCÍCIOS</td>
-                    <td>EXERCÍCIOS</td>
-                    <td>EXERCÍCIOS</td>
-                    <td>EXERCÍCIOS</td>
-                  </tr>
+                      <td>EXERCÍCIOS</td>
+                      <td>EXERCÍCIOS</td>
+                      <td>EXERCÍCIOS</td>
+                      <td>EXERCÍCIOS</td>
+                      <td>EXERCÍCIOS</td>
+                    </tr>
 
-                </tbody>
+                  </tbody>
+                </div>
               </table>
             </div>
           </div>
@@ -389,13 +390,13 @@
             <div class="col-sm-12 col-md-6 col-xl-4">
               <div class="h-100 bg-secondary rounded p-4">
                 <div class="d-flex align-items-center justify-content-between mb-4">
-                  <h6 class="mb-0">To Do List</h6>
-
+                  <h6 class="mb-0">Tarefa </h6>
                 </div>
                 <div class="d-flex mb-2">
-                  <input class="form-control bg-dark border-0" type="text" placeholder="Enter task">
-                  <button type="button" class="btn btn-primary ms-2">Add</button>
+                  <input id="taskInput" class="form-control bg-dark border-0" type="text" placeholder="Nova tarefa">
+                  <button id="addButton" type="button" class="btn btn-primary ms-2">Add</button>
                 </div>
+                <ul id="taskList"></ul>
 
               </div>
             </div>
@@ -408,7 +409,7 @@
         <div class="container-fluid pt-4 px-4">
           <div class="bg-secondary text-center rounded p-4">
             <div class="d-flex align-items-center justify-content-between mb-4">
-             <!-- <h6 class="mb-0">Simulados</h6>
+              <!-- <h6 class="mb-0">Simulados</h6>
 
             </div>
             <div class="table-responsive">
@@ -1275,6 +1276,10 @@
                       em língua inglesa.
                     </span>
                   </td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA1</a></td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA2</a></td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA3</a></td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA4</a></td>
                 </tr>
                 <tr>
                   <td>
@@ -1288,8 +1293,15 @@
                     <span class="pl-2">3.2 GRAMÁTICA Itens gramaticais relevantes para a compreensão
                       dos conteúdos semânticos.
                     </span>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA1</a></td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA2</a></td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA3</a></td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA4</a></td>
                   </td>
                 </tr>
+
+
+
               </table>
             </div>
           </div>
@@ -1336,6 +1348,13 @@
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
 </body>
+
+<style>
+  .highlight {
+    background-color: #dc3545;
+  }
+</style>
+
 <script>
   var pomodoro = {
     started: false,
@@ -1479,7 +1498,92 @@
       document.getElementById(String(i)).checked = checked;
     }
   }
-  window.addEventListener('change', save);  
+  window.addEventListener('change', save);
+
+
+  // scrip tabela semana cor
+  var table = document.getElementById('myTable');
+  var days = ['DOMINGO', 'SEGUNDA', 'TERÇA', 'QUARTA', 'QUINTA', 'SEXTA', 'SÁBADO'];
+  var date = new Date();
+  var day = days[date.getDay()];
+
+  for (var i = 0, cell; cell = table.rows[0].cells[i]; i++) {
+    if (cell.innerHTML === day) {
+      cell.className = 'highlight';
+    }
+  }
+</script>
+<!--Script Todo-->
+<style>
+  li {
+    display: flow-root;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button {
+    margin-left: 10px; 
+    color: #fff;
+    background-color: #dc3545;
+    border-radius: 5px;
+    
+  }
+</style>
+<script>
+  document.getElementById('addButton').addEventListener('click', function () {
+    var task = document.getElementById('taskInput').value;
+    if (task) {
+      var li = document.createElement('li');
+      var span = document.createElement('span');
+      span.textContent = task;
+      li.appendChild(span);
+
+      var removeButton = document.createElement('button');
+      removeButton.textContent = 'X';
+      removeButton.addEventListener('click', function () {
+        var tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+        var taskIndex = tasks.indexOf(task);
+        if (taskIndex > -1) {
+          tasks.splice(taskIndex, 1);
+          localStorage.setItem('tasks', JSON.stringify(tasks));
+        }
+        li.parentNode.removeChild(li);
+      });
+      li.appendChild(removeButton);
+
+      document.getElementById('taskList').appendChild(li);
+      document.getElementById('taskInput').value = '';
+
+      var tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+      tasks.push(task);
+      localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+  });
+
+  window.onload = function () {
+    var tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    tasks.forEach(function (task) {
+      var li = document.createElement('li');
+      var span = document.createElement('span');
+      span.textContent = task;
+      li.appendChild(span);
+
+      var removeButton = document.createElement('button');
+      removeButton.textContent = 'X';
+      removeButton.addEventListener('click', function () {
+        var tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+        var taskIndex = tasks.indexOf(task);
+        if (taskIndex > -1) {
+          tasks.splice(taskIndex, 1);
+          localStorage.setItem('tasks', JSON.stringify(tasks));
+        }
+        li.parentNode.removeChild(li);
+      });
+      li.appendChild(removeButton);
+
+      document.getElementById('taskList').appendChild(li);
+    });
+  };
 </script>
 
 </html>
