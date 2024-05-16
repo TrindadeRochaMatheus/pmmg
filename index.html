@@ -7,13 +7,6 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KMTNQJ9X');</script>
-  <!-- End Google Tag Manager -->
 
   <!-- Favicon -->
   <link href="img/favicon.ico" rel="icon">
@@ -40,11 +33,6 @@
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMTNQJ9X"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  
   <div class="container-fluid position-relative d-flex p-0">
     <!-- Spinner Start -->
     <div id="spinner"
@@ -300,17 +288,17 @@
 
             </div>
             <div class="table-responsive">
-              <table class="table text-start align-middle table-bordered table-hover mb-0">
-                <thead>
-                  <tr class="text-white">
-
-                    <th scope="col">SEGUNDA</th>
-                    <th scope="col">TERÇA</th>
-                    <th scope="col">QUARTA</th>
-                    <th scope="col">QUINTA</th>
-                    <th scope="col">SEXTA</th>
-                  </tr>
-                </thead>
+              <table id="myTable" class="table align-middle table-bordered table-hover ">
+                  <thead>
+                      <tr class="text-white">
+                          <th scope="col">SEGUNDA</th>
+                          <th scope="col">TERÇA</th>
+                          <th scope="col">QUARTA</th>
+                          <th scope="col">QUINTA</th>
+                          <th scope="col">SEXTA</th>
+                      </tr>
+                  </thead>
+                  <div class="table align-middle table-bordered table-hover ">
                 <tbody>
                   <tr>
 
@@ -346,6 +334,7 @@
                   </tr>
 
                 </tbody>
+              </div>
               </table>
             </div>
           </div>
@@ -401,13 +390,12 @@
             <div class="col-sm-12 col-md-6 col-xl-4">
               <div class="h-100 bg-secondary rounded p-4">
                 <div class="d-flex align-items-center justify-content-between mb-4">
-                  <h6 class="mb-0">Lista de Tarefas</h6>
+                  <h6 class="mb-0">To Do List</h6>
 
                 </div>
-                <div class="align-items-center justify-content-between mb-4">
-                  <input id="todoInput" class="form-control bg-dark border-0" type="text" placeholder="Nova tarefa">
-                  <button type="button" class="btn btn-primary ms-2" onclick="newTask()">Add</button>
-                  <ul id="todoList"></ul>
+                <div class="d-flex mb-2">
+                  <input class="form-control bg-dark border-0" type="text" placeholder="Enter task">
+                  <button type="button" class="btn btn-primary ms-2">Add</button>
                 </div>
 
               </div>
@@ -417,72 +405,72 @@
         <!-- Widgets End -->
 
 
-                <!-- Recent Sales Start -->
-                <div class="container-fluid pt-4 px-4">
-                    <div class="bg-secondary text-center rounded p-4">
-                      <div class="d-flex align-items-center justify-content-between mb-4">
-                       <!-- <h6 class="mb-0">Simulados</h6>
-          
-                      </div>
-                      <div class="table-responsive">
-                        <table class="table text-start align-middle table-bordered table-hover mb-0">
-                          <thead>
-                            <tr class="text-white">
-                              <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                              <th scope="col">DATA</th>
-                              <th scope="col">ERROS</th>
-                              <th scope="col">ACERTOS</th>
-                              <th scope="col">DOWNLOAD</th>
-                              <th scope="col">RESPOSTAS</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td><input class="form-check-input" type="checkbox"></td>
-                              <td>01 Jan 2045</td>
-                              <td>Jhon Doe</td>
-                              <td><input class="bg-success border-0" type="number" placeholder=""></td>
-                              <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
-                              <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
-                            </tr>
-                            <tr>
-                              <td><input class="form-check-input" type="checkbox"></td>
-                              <td>01 Jan 2045</td>
-                              <td>Jhon Doe</td>
-                              <td><input class="bg-success border-0" type="number" placeholder=""></td>
-                              <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
-                              <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
-                            </tr>
-                            <tr>
-                              <td><input class="form-check-input" type="checkbox"></td>
-                              <td>01 Jan 2045</td>
-                              <td>Jhon Doe</td>
-                              <td><input class="bg-success border-0" type="number" placeholder=""></td>
-                              <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
-                              <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
-                            </tr>
-                            <tr>
-                              <td><input class="form-check-input" type="checkbox"></td>
-                              <td>01 Jan 2045</td>
-                              <td>Jhon Doe</td>
-                              <td><input class="bg-success border-0" type="number" placeholder=""></td>
-                              <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
-                              <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
-                            </tr>
-                            <tr>
-                              <td><input class="form-check-input" type="checkbox"></td>
-                              <td>01 Jan 2045</td>
-                              <td>Jhon Doe</td>
-                              <td><input class="bg-success border-0" type="number" placeholder=""></td>
-                              <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
-                              <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
-                            </tr>
-                          </tbody>
-                        </table>-->
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <!-- Recent Sales Start -->
+        <div class="container-fluid pt-4 px-4">
+          <div class="bg-secondary text-center rounded p-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+             <!-- <h6 class="mb-0">Simulados</h6>
+
+            </div>
+            <div class="table-responsive">
+              <table class="table text-start align-middle table-bordered table-hover mb-0">
+                <thead>
+                  <tr class="text-white">
+                    <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                    <th scope="col">DATA</th>
+                    <th scope="col">ERROS</th>
+                    <th scope="col">ACERTOS</th>
+                    <th scope="col">DOWNLOAD</th>
+                    <th scope="col">RESPOSTAS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input class="form-check-input" type="checkbox"></td>
+                    <td>01 Jan 2045</td>
+                    <td>Jhon Doe</td>
+                    <td><input class="bg-success border-0" type="number" placeholder=""></td>
+                    <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
+                    <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
+                  </tr>
+                  <tr>
+                    <td><input class="form-check-input" type="checkbox"></td>
+                    <td>01 Jan 2045</td>
+                    <td>Jhon Doe</td>
+                    <td><input class="bg-success border-0" type="number" placeholder=""></td>
+                    <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
+                    <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
+                  </tr>
+                  <tr>
+                    <td><input class="form-check-input" type="checkbox"></td>
+                    <td>01 Jan 2045</td>
+                    <td>Jhon Doe</td>
+                    <td><input class="bg-success border-0" type="number" placeholder=""></td>
+                    <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
+                    <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
+                  </tr>
+                  <tr>
+                    <td><input class="form-check-input" type="checkbox"></td>
+                    <td>01 Jan 2045</td>
+                    <td>Jhon Doe</td>
+                    <td><input class="bg-success border-0" type="number" placeholder=""></td>
+                    <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
+                    <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
+                  </tr>
+                  <tr>
+                    <td><input class="form-check-input" type="checkbox"></td>
+                    <td>01 Jan 2045</td>
+                    <td>Jhon Doe</td>
+                    <td><input class="bg-success border-0" type="number" placeholder=""></td>
+                    <td><a class="btn btn-sm btn-primary" href="">BAIXAR</a></td>
+                    <td><a class="btn btn-sm btn-primary" href="">GABARITO</a></td>
+                  </tr>
+                </tbody>
+              </table>-->
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div id="div2" style="border: 1px solid black; padding: 10px; margin: 10px; display: none;">
 
@@ -941,7 +929,7 @@
                   <td>
                     <div class="form-check form-check-muted m-0">
                       <label class="form-check-label">
-                        <input type="checkbox" id="34" class="box" >
+                        <input type="checkbox" id="34" class="box" onclick="move(this,3)">
                       </label>
                     </div>
                   </td>
@@ -951,7 +939,7 @@
                   <td>
                     <div class="form-check form-check-muted m-0">
                       <label class="form-check-label">
-                        <input type="checkbox" id="35" class="box">
+                        <input type="checkbox" id="35" class="box" onclick="move(this,3)">
                       </label>
                     </div>
                   </td>
@@ -1288,6 +1276,10 @@
                       em língua inglesa.
                     </span>
                   </td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA1</a></td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA2</a></td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA3</a></td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA4</a></td>
                 </tr>
                 <tr>
                   <td>
@@ -1301,8 +1293,15 @@
                     <span class="pl-2">3.2 GRAMÁTICA Itens gramaticais relevantes para a compreensão
                       dos conteúdos semânticos.
                     </span>
+                    <td><a class="btn btn-sm btn-primary" href="">AULA1</a></td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA2</a></td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA3</a></td>
+                  <td><a class="btn btn-sm btn-primary" href="">AULA4</a></td>
                   </td>
                 </tr>
+                
+                 
+             
               </table>
             </div>
           </div>
@@ -1349,6 +1348,13 @@
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
 </body>
+
+<style>
+  .highlight {
+      background-color: #dc3545;
+  }
+</style>
+
 <script>
   var pomodoro = {
     started: false,
@@ -1494,51 +1500,18 @@
   }
   window.addEventListener('change', save);  
 
-  function getTodos() {
-            let todos = [];
-            let todosStr = localStorage.getItem('todo');
-            if (todosStr !== null) {
-                todos = JSON.parse(todosStr); 
-            }
-            return todos;
+
+  // scrip tabela semana cor
+  var table = document.getElementById('myTable');
+    var days = ['DOMINGO', 'SEGUNDA', 'TERÇA', 'QUARTA', 'QUINTA', 'SEXTA', 'SÁBADO'];
+    var date = new Date();
+    var day = days[date.getDay()];
+
+    for (var i = 0, cell; cell = table.rows[0].cells[i]; i++) {
+        if (cell.innerHTML === day) {
+            cell.className = 'highlight';
         }
-
-        function newTask() {
-            let task = document.getElementById('todoInput').value;
-            let todos = getTodos();
-            todos.push(task);
-            localStorage.setItem('todo', JSON.stringify(todos));
-
-            showTodos();
-
-            document.getElementById('todoInput').value = '';
-        }
-
-        function removeTask() {
-            let id = this.getAttribute('id');
-            let todos = getTodos();
-            todos.splice(id, 1);
-            localStorage.setItem('todo', JSON.stringify(todos));
-
-            showTodos();
-        }
-
-        function showTodos() {
-            let todos = getTodos();
-
-            let html = '';
-            for(let i=0; i<todos.length; i++) {
-                html += '<li>' + todos[i] + ' <button class="remove" id="' + i  + '">x</button></li>';
-            };
-            document.getElementById('todoList').innerHTML = html;
-
-            let buttons = document.getElementsByClassName('remove');
-            for (let i=0; i < buttons.length; i++) {
-                buttons[i].addEventListener('click', removeTask);
-            };
-        }
-
-        showTodos();
+    }
 </script>
 
 </html>
